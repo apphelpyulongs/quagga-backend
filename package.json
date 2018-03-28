@@ -1,0 +1,39 @@
+{
+  "name": "quagga-backend",
+  "version": "1.0.0",
+  "description": "quagga backend prototype",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "eslint --fix --ext js src",
+    "dev": "npm run lint && babel-node ./src/server.js",
+    "test": "npm run test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apphelpyulongs/quagga-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "hapi"
+  ],
+  "author": "AppHelp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apphelpyulongs/quagga-backend/issues"
+  },
+  "homepage": "https://github.com/apphelpyulongs/quagga-backend#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "nodemon": "^1.17.2",
+    "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "hapi": "^17.2.3"
+  }
+}
